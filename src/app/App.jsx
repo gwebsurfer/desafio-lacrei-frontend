@@ -1,23 +1,23 @@
-import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import GlobalStyles from '../styles/GlobalStyles';
+import Home from '../pages/Home/Home';
+import PessoaUsuaria from '../pages/PessoaUsuaria/PessoaUsuaria';
+import Profissional from '../pages/Profissional/Profissional';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className='card'>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Router>
+      <GlobalStyles />
+      <Header />
+      <Routes>
+        <Route path='/' exact element={<Home />} />
+        <Route path='/pessoa-usuaria' exact element={<PessoaUsuaria />} />
+        <Route path='/profissional' exact element={<Profissional />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
