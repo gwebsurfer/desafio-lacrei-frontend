@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom';
 import NavBar from '../NavBar/NavBar';
-import { HeaderContainer } from './HeaderStyles';
+import { HeaderContainer, StyledLink } from './HeaderStyles';
 
 function Header() {
   return (
     <HeaderContainer>
-      <Link to='/'>Lacrei</Link>
+      <StyledLink to='/'>Lacrei</StyledLink>
       <NavBar variant='header' />
     </HeaderContainer>
   );

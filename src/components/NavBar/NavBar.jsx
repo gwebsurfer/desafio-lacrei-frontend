@@ -1,13 +1,29 @@
-import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { NavBarContainer } from './NavBarStyles';
+import { NavBarContainer, StyledLink } from './NavBarStyles';
 
 function NavBar({ variant }) {
+  const location = useLocation();
+
   return (
-    <NavBarContainer variant={variant}>
-      <Link to='/'>Home</Link>
-      <Link to='/pessoa-usuaria'>Pessoa Usuária</Link>
-      <Link to='/profissional'>Profissional</Link>
+    <NavBarContainer>
+      <StyledLink active={location.pathname === '/'} variant={variant} to='/'>
+        Home
+      </StyledLink>
+      <StyledLink
+        active={location.pathname === '/pessoa-usuaria'}
+        variant={variant}
+        to='/pessoa-usuaria'
+      >
+        Pessoa Usuária
+      </StyledLink>
+      <StyledLink
+        active={location.pathname === '/profissional'}
+        variant={variant}
+        to='/profissional'
+      >
+        Profissional
+      </StyledLink>
     </NavBarContainer>
   );
 }

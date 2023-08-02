@@ -15,8 +15,6 @@ const GlobalStyles = createGlobalStyle`
     font: 400 1rem 'Nunito', sans-serif;
     background-color: rgb(255, 255, 255);
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
   }
 
   h1 {
