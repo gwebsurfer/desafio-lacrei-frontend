@@ -1,9 +1,30 @@
+import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { NavBarContainer, StyledLink } from './NavBarStyles';
 
 function NavBar({ variant }) {
   const location = useLocation();
+
+  useEffect(() => {
+    let title;
+
+    switch (location.pathname) {
+      case '/':
+        title = 'Home';
+        break;
+      case '/pessoa-usuaria':
+        title = 'Pessoa Usuária';
+        break;
+      case '/profissional':
+        title = 'Profissional';
+        break;
+      default:
+        title = 'Página não encontrada';
+    }
+
+    document.title = `${title} | Desafio Lacrei`;
+  }, [location]);
 
   return (
     <NavBarContainer>
