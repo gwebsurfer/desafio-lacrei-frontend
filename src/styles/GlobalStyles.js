@@ -39,6 +39,14 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  .container {
+    width: 100%;
+    padding: 4rem 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   .primary-button {
     padding: 0.75rem 2rem;
     background-color: rgb(1 135 98 / 1);

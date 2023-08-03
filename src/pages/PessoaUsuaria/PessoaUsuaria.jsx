@@ -1,10 +1,27 @@
-import { PessoaUsuariaContainer, Title } from './PessoaUsuariaStyles';
+import { Content, Description, Image, StyledImg } from './PessoaUsuariaStyles';
+import ImgPessoaUsuaria from '../../assets/pessoa-usuaria.svg';
 
 function PessoaUsuaria() {
   return (
-    <PessoaUsuariaContainer>
-      <Title>Pessoa Usuária</Title>
-    </PessoaUsuariaContainer>
+    <main className='container'>
+      <Content>
+        <h1>Pessoa Usuária</h1>
+        <Description>
+          A Lacrei garante que pessoas LGBTQIAPN + recebam atendimento realizado
+          por profissionais de qualidade e que atendam às suas necessidades de
+          forma segura e acolhedora.
+        </Description>
+      </Content>
+      <Image>
+        <StyledImg
+          width='555'
+          height='421'
+          src={ImgPessoaUsuaria}
+          alt=''
+          loading='lazy'
+        />
+      </Image>
+    </main>
   );
 }
 

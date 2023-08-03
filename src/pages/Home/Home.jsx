@@ -1,6 +1,5 @@
 import { useNavigate } from 'react-router-dom';
 import {
-  HomeContainer,
   HomeCTA,
   Description,
   ButtonsContainer,
@@ -13,7 +12,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <HomeContainer>
+    <main className='container'>
       <HomeCTA>
         <h1>Boas vindas a Lacrei Saúde</h1>
         <Description>
@@ -43,7 +42,7 @@ function Home() {
           loading='lazy'
         />
       </Image>
-    </HomeContainer>
+    </main>
   );
 }
 
