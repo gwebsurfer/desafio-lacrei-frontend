@@ -49,7 +49,7 @@ function Footer() {
         </SocialIcon>
         <SocialIcon
           target='_blank'
-          href='https://www.instagram.com/lacrei.saude'
+          href='https://www.facebook.com/lacrei.saude'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -92,7 +92,7 @@ function Footer() {
         </SocialIcon>
         <SocialIcon
           target='_blank'
-          href='https://www.instagram.com/lacrei.saude'
+          href='https://www.linkedin.com/company/lacrei'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
