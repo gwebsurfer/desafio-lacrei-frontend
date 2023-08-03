@@ -1,10 +1,37 @@
 import styled from 'styled-components';
 
 export const HomeContainer = styled.section`
-  background-color: aliceblue;
+  width: 100%;
+  padding: 4rem 4rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 `;
 
-export const Title = styled.h1`
-  font-size: 2rem;
-  color: aqua;
+export const HomeCTA = styled.div`
+  max-width: 540px;
+  display: block;
+`;
+
+export const Description = styled.p`
+  margin-top: 2rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  color: rgb(81 81 81 / 1);
+`;
+
+export const ButtonsContainer = styled.div`
+  padding-top: 3rem;
+  max-width: 453px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Image = styled.div`
+  padding: 0;
+  margin: 0;
+  height: 421px;
+  width: 540px;
+  display: block;
 `;

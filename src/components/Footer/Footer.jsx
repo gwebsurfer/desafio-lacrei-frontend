@@ -1,10 +1,12 @@
+import { FooterContainer, SocialIcons } from './FooterStyles';
 import NavBar from '../NavBar/NavBar';
 
 function Footer() {
   return (
-    <div>
+    <FooterContainer>
       <NavBar variant='footer' />
-    </div>
+      <SocialIcons>...</SocialIcons>
+    </FooterContainer>
   );
 }
 
