@@ -5,6 +5,7 @@ import {
   Description,
   ButtonsContainer,
   Image,
+  StyledImg,
 } from './HomeStyles';
 import ImgHome from '../../assets/home.svg';
 
@@ -34,7 +35,13 @@ function Home() {
         </ButtonsContainer>
       </HomeCTA>
       <Image>
-        <img width='100%' height='421' src={ImgHome} alt='' loading='lazy' />
+        <StyledImg
+          width='555'
+          height='421'
+          src={ImgHome}
+          alt=''
+          loading='lazy'
+        />
       </Image>
     </HomeContainer>
   );

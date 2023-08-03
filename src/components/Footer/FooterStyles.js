@@ -15,3 +15,12 @@ export const SocialIcons = styled.div`
   display: flex;
   gap: 2rem;
 `;
+
+export const SocialIcon = styled.a`
+  color: rgb(1 135 98 / 1);
+`;
+
+export const Copyright = styled.p`
+  font-size: 0.75rem;
+  color: rgb(81 81 81 / 1);
+`;
