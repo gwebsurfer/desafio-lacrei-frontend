@@ -12,6 +12,12 @@ export const Description = styled.p`
   border-left: 5px solid rgb(1 135 98 / 1);
   font-size: 1.5rem;
   color: rgb(81 81 81 / 1);
+
+  @media (max-width: 1040px) {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
 `;
 
 export const Image = styled.div`

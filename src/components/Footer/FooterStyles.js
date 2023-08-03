@@ -9,6 +9,15 @@ export const FooterContainer = styled.footer`
   align-items: flex-start;
   justify-content: space-between;
   border-top: 0.063rem solid rgb(176 224 211 / 1);
+
+  @media (max-width: 520px) {
+    margin: 0 1rem;
+    padding-top: 1rem;
+  }
+
+  @media (min-width: 521px) and (max-width: 1040px) {
+    margin: 0 2rem;
+  }
 `;
 
 export const SocialIcons = styled.div`

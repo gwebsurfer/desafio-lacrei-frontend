@@ -61,6 +61,30 @@ const GlobalStyles = createGlobalStyle`
     flex-shrink: 0;
     border: 2px solid rgb(1 135 98 / 1);
   }
+
+  @media (max-width: 520px) {
+    h1 {
+    font-size: 1.5rem;
+    }
+
+    .container {
+    flex-direction: column;
+    padding: 1rem 1rem 0;
+    align-items: center;
+    }
+  }
+
+  @media (min-width: 521px) and (max-width: 1040px) {
+    h1 {
+    font-size: 2rem;
+    }
+
+    .container {
+    flex-direction: column;
+    padding: 2rem 2rem 0;
+    align-items: center;
+    }
+  }
 `;
 
 export default GlobalStyles;

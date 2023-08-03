@@ -10,6 +10,18 @@ export const Description = styled.p`
   line-height: 2rem;
   font-size: 1.5rem;
   color: rgb(81 81 81 / 1);
+
+  @media (max-width: 520px) {
+    margin-top: 0.875rem;
+    line-height: 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  @media (min-width: 521px) and (max-width: 1040px) {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
 `;
 
 export const ButtonsContainer = styled.div`
@@ -18,6 +30,11 @@ export const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 520px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
 export const Image = styled.div`

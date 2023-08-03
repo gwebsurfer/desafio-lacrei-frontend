@@ -8,6 +8,15 @@ export const HeaderContainer = styled.header`
   justify-content: space-between;
   font-weight: bold;
   background-color: rgb(238 238 238 / 1);
+
+  @media (max-width: 520px) {
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+  }
+
+  @media (max-width: 1040px) {
+    padding: 0.5rem 2rem;
+  }
 `;
 
 export const StyledLink = styled(Link)`
