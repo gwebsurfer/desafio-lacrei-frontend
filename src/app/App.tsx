@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalStyles from '../styles/GlobalStyles';
 import Home from '../pages/Home/Home';
@@ -12,9 +13,9 @@ function App() {
       <GlobalStyles />
       <Header />
       <Routes>
-        <Route path='/' exact element={<Home />} />
-        <Route path='/pessoa-usuaria' exact element={<PessoaUsuaria />} />
-        <Route path='/profissional' exact element={<Profissional />} />
+        <Route path='/' element={<Home />} />
+        <Route path='/pessoa-usuaria' element={<PessoaUsuaria />} />
+        <Route path='/profissional' element={<Profissional />} />
       </Routes>
       <Footer />
     </Router>
