@@ -1,7 +1,8 @@
+import React from 'react';
 import { Content, Description, Image, StyledImg } from './ProfissionalStyles';
 import ImgProfissional from '../../assets/profissional.svg';
 
-function Profissional() {
+const Profissional: React.FC = () => {
   return (
     <main className='container'>
       <Content>
@@ -22,6 +23,6 @@ function Profissional() {
       </Image>
     </main>
   );
-}
+};
 
 export default Profissional;

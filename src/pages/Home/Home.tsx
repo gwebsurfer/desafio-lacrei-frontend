@@ -1,3 +1,4 @@
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   HomeCTA,
@@ -8,7 +9,7 @@ import {
 } from './HomeStyles';
 import ImgHome from '../../assets/home.svg';
 
-function Home() {
+const Home: React.FC = () => {
   const navigate = useNavigate();
 
   return (
@@ -44,6 +45,6 @@ function Home() {
       </Image>
     </main>
   );
-}
+};
 
 export default Home;

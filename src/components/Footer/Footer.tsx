@@ -1,12 +1,13 @@
+import React from 'react';
 import {
-  Copyright,
   FooterContainer,
-  SocialIcon,
   SocialIcons,
+  SocialIcon,
+  Copyright,
 } from './FooterStyles';
 import NavBar from '../NavBar/NavBar';
 
-function Footer() {
+const Footer: React.FC = () => {
   return (
     <FooterContainer>
       <NavBar variant='footer' />
@@ -151,6 +152,6 @@ function Footer() {
       <Copyright>Desafio Front-end Lacrei</Copyright>
     </FooterContainer>
   );
-}
+};
 
 export default Footer;

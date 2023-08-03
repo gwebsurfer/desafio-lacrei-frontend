@@ -1,7 +1,8 @@
+import React from 'react';
 import { Content, Description, Image, StyledImg } from './PessoaUsuariaStyles';
 import ImgPessoaUsuaria from '../../assets/pessoa-usuaria.svg';
 
-function PessoaUsuaria() {
+const PessoaUsuaria: React.FC = () => {
   return (
     <main className='container'>
       <Content>
@@ -23,6 +24,6 @@ function PessoaUsuaria() {
       </Image>
     </main>
   );
-}
+};
 
 export default PessoaUsuaria;

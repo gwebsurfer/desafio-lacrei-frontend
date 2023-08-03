@@ -1,10 +1,13 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import { NavBarContainer, StyledLink } from './NavBarStyles';
 
-function getTitle(pathname) {
-  const titles = {
+interface NavBarProps {
+  variant: 'header' | 'footer';
+}
+
+function getTitle(pathname: string): string {
+  const titles: { [key: string]: string } = {
     '/': 'Home',
     '/pessoa-usuaria': 'Pessoa Usuária',
     '/profissional': 'Profissional',
@@ -13,7 +16,7 @@ function getTitle(pathname) {
   return titles[pathname] || 'Página não encontrada';
 }
 
-function NavBar({ variant }) {
+const NavBar: React.FC<NavBarProps> = ({ variant }) => {
   const location = useLocation();
 
   useEffect(() => {
@@ -42,10 +45,6 @@ function NavBar({ variant }) {
       </StyledLink>
     </NavBarContainer>
   );
-}
-
-NavBar.propTypes = {
-  variant: PropTypes.oneOf(['header', 'footer']).isRequired,
 };
 
 export default NavBar;

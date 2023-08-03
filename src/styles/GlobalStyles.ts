@@ -1,6 +1,7 @@
+import React from 'react';
 import { createGlobalStyle } from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
+const GlobalStyles: React.FC = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;

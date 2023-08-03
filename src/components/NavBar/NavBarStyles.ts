@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const NavBarContainer = styled.nav`
+interface Props {
+  $variant?: string;
+  $active?: boolean;
+}
+
+export const NavBarContainer = styled.nav<Props>`
   display: flex;
   gap: 2.5rem;
   justify-content: space-between;
@@ -17,7 +22,7 @@ export const NavBarContainer = styled.nav`
   }
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(Link)<Props>`
   font-size: 1rem;
   font-weight: ${(props) =>
     props.$active || props.$variant === 'header' ? '700' : '400'};
